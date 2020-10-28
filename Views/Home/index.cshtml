@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="~/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="~/css/styles.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="~/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+    <div id ="container" class="z-depth-3">
+      <div id="content-container">
+        <div id="code-container">
+        <h2>Random Passcode:</h2>
+        <p>Passcode #@ViewBag.genCount</p>
+        <h4>@ViewBag.code</h4>
+        <a class="waves-effect waves-light btn-large" href="/getcode">Generate</a>
+        <a class="waves-effect waves-light btn-large" href="/clear">Clear</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
